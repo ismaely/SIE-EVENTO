@@ -1,0 +1,89 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16/jul/2016, 7:24:58
+    Author     : ismael_7il
+*/
+
+body{
+    padding: 0;
+    margin: 0;
+    //background-color:  #373636 ;
+}
+h1{
+    text-align: center;
+    
+}
+hr{
+    padding: 1px;
+   background-color: #373636;
+  box-shadow:  0 0 5px  #3c763d;   
+}
+.container{
+    font-family: Helvetica, Tahoma, Arial, Sans-serif;
+    font-size: 14px;
+    width: 75%;
+    height: 500px;
+    border: solid 1px #ccc;
+    padding: 20px;
+    margin: 2% auto;
+    border-radius: 20px;
+    color: #666;
+   
+}
+.formulario{
+    width: 28%;
+    padding: 20px;
+    background-color:#f6f6f6;
+    color: #3890c8;
+    border-radius: 10px;
+    margin: 0 auto;
+    box-shadow: 0 0 12px #666;
+}
+
+.formulario input{
+    width: 100%;
+    height: 25px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    outline: none;
+    padding: 2px;
+    
+}
+.formulario label{
+    font-weight:bolder;
+}
+#enviar{
+    height: 40px;
+    background-color: #3890c8;
+    border: none;
+    color: #fff;
+    text-shadow: 0 0 2px #000;
+    font-weight: 900;
+    font-size: 16px;
+    
+}
+
+#certo{
+    display: none; 
+   color: #3c763d;
+   margin: 1px;
+    
+}
+#errado{
+     display: none; 
+    color: #cf0606;
+     margin: 1px;
+}
+#enviar:hover{
+ color: #ccc;  
+}
+#alert{
+    height: 30px;
+}
+#alert img{
+    display: none;
+}

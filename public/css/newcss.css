@@ -1,0 +1,21 @@
+#form .sumeter  li {
+                                         display:inline-block;
+                                         text-decoraction:none;
+                                         margin-left: -10%;
+                                         //border: 1px solid #000;
+                                         width: 50%;
+                                         padding-left: -22%;
+         }
+         #form .sumeter label{
+             
+             margin-left:-4%;
+             
+             
+         }
+#form .sumeter{
+            margin-left: 15%;
+        }
+
+ 
+         
+  

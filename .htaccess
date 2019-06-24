@@ -1,0 +1,39 @@
+Options -Indexes
+RewriteEngine On
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*) https%{SERVER_NAME}%{REQUEST_URI}
+#RewriteRule ^(.*) https://%{SERVER_NAME}%{REQUEST_URI}
+# CONDIÇÃO QUE VAI EVITAR O USO DE CROSSE SITE SCRIPTING ATTACKS XSS NO ARQUIVO
+RewriteCond %{REQUEST_METHOD} ^(TRACE|TRACK)
+
+# FUNÇÃO QUE VAI SE PREVINIR CONTRA STRING MALICIOSA OU XSS
+RewriteCond %{QUERY_STRING} ftp:  [NC,OR]
+RewriteCond %{QUERY_STRING} http: [NC,OR]
+RewriteCond %{QUERY_STRING} https:   [NC,OR]
+RewriteCond %{QUERY_STRING} mosConfig [NC,OR]
+RewriteCond %{QUERY_STRING} ^.*(globals|encode|localhost|loopback).* [NC,OR]
+
+
+
+# PARA MATAR QUALQUER QUE TENTA ACESSAR ARQUIVO DIREITO
+<FilesMatch "\.(sqlite|xml|csv|ini|of)$">
+ order allow,deny
+ deny from all
+</FilesMatch>
+
+ <Files .htaccess>
+   order allow,deny
+   deny from all
+  </Files>
+
+ <Files php.ini>
+  order allow,deny
+   deny from all
+  </Files>
+#<FilesMatch "\.(sqlite|xml|csv|ini|of)$">
+#Deny from all
+##allow from all
+#</FilesMatch>

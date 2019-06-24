@@ -1,0 +1,20 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 9/ago/2016, 2:23:06
+    Author     : Lindiane Gonçalves
+*/
+
+
+.block {
+    display: block;
+}
+#errado,form.cmxform label.error {
+    display: none;
+    color: red;
+    margin-left:60px;
+}
+

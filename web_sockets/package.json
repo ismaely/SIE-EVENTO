@@ -1,0 +1,21 @@
+{
+  "name": "sie-sockets",
+  "version": "1.0.0",
+  "description": "aplicação que vai servir para o usuario informar o Admin, caso quero avisar algo de errado",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sie",
+    "eventos",
+    "informação",
+    "computação",
+    "descrição"
+  ],
+  "author": "gunza ismael",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^1.1.1"
+  }
+}
