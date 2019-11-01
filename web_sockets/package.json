@@ -16,6 +16,6 @@
   "author": "gunza ismael",
   "license": "MIT",
   "dependencies": {
-    "ws": "^1.1.1"
+    "ws": "^7.2.0"
   }
 }
